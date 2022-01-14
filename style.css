@@ -221,6 +221,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .progress-bars-wrapper {
@@ -235,42 +236,6 @@ html {
   border-radius: 0.3rem;
   box-shadow: 0.2rem 0.2rem 1rem #555;
   position: relative;
-}
-.interest{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 30vh;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.interest i{
-  font-size: 9rem;
-  color: #888;
-  margin-bottom: 2rem;
-  text-shadow: 0.1rem 0.1rem 0.5rem #555;
-}
-.interest i:hover{
-  color: #e41c6f;
-  height: 15rem;
-  width: 15rem;
-}
-.interest-heading{
-  font-size: 2rem;
-  color: #fff;
-  background-color: #777;
-  width: 20rem;
-  letter-spacing: 0.3rem;
-  transform: skew(-10deg);
-  box-shadow: 0.2rem 0.2rem 0.5rem #555;
-  text-align: center;
-  font-weight: 500;
-}
-.interest-heading:hover{
-  color:#e41c6f;
-  background-color: #222;
-  font-weight: 900;
-  font-size: 3rem;
 }
 
 .progress-text {
@@ -300,6 +265,7 @@ html {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .service {
@@ -322,6 +288,45 @@ html {
   height: 15rem;
   width: 15rem;
 }
+.interest{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30vh;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.interest i{
+  font-size: 10rem;
+  color: #888;
+  margin-bottom: 2rem;
+  text-shadow: 0.1rem 0.1rem 0.5rem #555;
+  padding: 2rem 2rem 2rem 2rem;
+}
+.interest i:hover{
+  color: #e41c6f;
+  height: 15rem;
+  width: 15rem;
+}
+.interest-heading{
+  font-size: 2rem;
+  color: #fff;
+  background-color: #777;
+  width: 20rem;
+  letter-spacing: 0.3rem;
+  transform: skew(-10deg);
+  box-shadow: 0.2rem 0.2rem 0.5rem #555;
+  text-align: center;
+  font-weight: 500;
+}
+.interest-heading:hover{
+  color:#e41c6f;
+  background-color: #222;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
 
 .service h2 {
   font-size: 2rem;
@@ -549,9 +554,31 @@ html {
     height: auto;
     flex-wrap: wrap;
   }
+  .section-2{
+    margin-bottom: 2rem;
+    margin-top: -5rem;
+  }
+  .progress-bars-wrapper{
+    margin-top: -8rem;
+  }
 
   .service {
-    margin: 3rem 2rem;
+    margin: 5rem 2rem;
+  }
+  .services{
+    margin-top: -5rem;
+  }
+  .interest{
+    margin-top: -3rem;
+  }
+  .service i{
+    font-size: 8rem;
+  }
+  .service-heading{
+    font-size: 0.5rem;
+  }
+  .interest i{
+    font-size: 8rem;
   }
 
   .section-4 {
@@ -582,9 +609,14 @@ html {
   .section-2 {
     padding: 10rem;
   }
-
+.section-2 i{
+  size: 0.2rem;
+}
   .section-2-heading {
     margin-bottom: 10rem;
+  }
+  .section-3{
+    margin-top: 45rem;
   }
 
   .progress-bar {
@@ -606,8 +638,22 @@ html {
 
 @media (max-width: 500px) {
   html {
-    font-size: 55%;
+    font-size: 50%;
   }
+}
+.interest i{
+  
+  margin-bottom: -1rem;
+}
+
+.interest{
+  text-align: center;
+}
+.services{
+  margin-top: -7rem;
+}
+.service{
+  margin-top: -2rem;
 }
 
 @media (max-width: 450px) {
@@ -627,8 +673,21 @@ html {
     text-align: center;
   }
 
+
   .progress-bar {
     width: 40rem;
+  }
+}
+@media(max-width: 300px){
+  .section-3{
+    margin-top: 55rem;
+  }
+  html{
+    font-size: 40%;
+  }
+  .service{
+    margin-top: 5rem;
+  
   }
 }
 /* End of Responsive */
